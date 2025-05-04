@@ -15,7 +15,7 @@ const cookieParser = require("cookie-parser");
 
 app.use(morgan("tiny")); 
 app.use(cors({
-  origin: 'http://localhost:5173', 
+  origin: 'front-phi-rust.vercel.app', 
   credentials: true, 
 }));
 
