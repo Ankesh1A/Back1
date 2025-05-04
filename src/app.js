@@ -15,9 +15,10 @@ const cookieParser = require("cookie-parser");
 
 app.use(morgan("tiny")); 
 app.use(cors({
-  origin: 'front-phi-rust.vercel.app', 
-  credentials: true, 
+  origin: 'https://front-phi-rust.vercel.app', // ✅ Correct with protocol
+  credentials: true,
 }));
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); 
